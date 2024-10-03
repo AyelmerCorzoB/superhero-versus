@@ -19,6 +19,7 @@ export function mostrarSuperHeroesDc(superheroes) {
             if (cajaInfo.style.display === 'none') {
                 cajaInfo.innerHTML = `Nombre: ${hero.nombreFicticio} ${hero.nombreReal}<br>Biografía: ${hero.Biografia}<br>Poderes: ${hero.poderes}`;
                 cajaInfo.style.display = 'block'; 
+                cajaInfo.style.width = "300px"
             } else {
                 cajaInfo.style.display = 'none'; 
             }
