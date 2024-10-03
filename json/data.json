@@ -1,20 +1,65 @@
 {
     "superheroesDc":[ 
         {
-        "img": "https://static.wikia.nocookie.net/actiontalesfanfict/images/a/a0/Cyborg_lowres.jpg/revision/latest?cb=20140902174858&path-prefix=es",
-        "NombreReal": "Victor Stone",
-        "nombreFicticio": "Cyborg",
-        "Biografia": "Cyborg es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por DC Comics. El personaje fue creado por el escritor Marv Wolfman y el artista George Pérez y apareció por primera vez en un suplemento especial en DC Comics Presents",
-        "Poderes y habilidades": "los implantes cibernéticos del cuerpo de Victor Gracias le proporcionan fuerza, resistencia y durabilidad superhumanas. Asimismo, le permite interconectarse físicamente con los ordenadores. Su tecnología, derivada del ingenio alienígena conocido como “Omegadrome” es muy versátil, permitiéndole reconfigurar su estructura según sus necesidades. Eso le permite a Victor tener acceso a una amplia gama de dispositivos y sensores sólo limitada por sus conocimientos técnicos..",
+            "img": "https://i0.wp.com/xn--oo-yjab.cl/wp-content/uploads/2016/03/dc-comics-personajes-principales-e1456777897793.jpeg?resize=640%2C360",
+            "nombreReal": "Victor Stone",
+            "nombreFicticio": "Cyborg",
+            "Biografia": "Cyborg es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por DC Comics. El personaje fue creado por el escritor Marv Wolfman y el artista George Pérez y apareció por primera vez en un suplemento especial en DC Comics Presents",
+            "poderes": "los implantes cibernéticos del cuerpo de Victor Gracias le proporcionan fuerza, resistencia y durabilidad superhumanas. Asimismo, le permite interconectarse físicamente con los ordenadores. Su tecnología, derivada del ingenio alienígena conocido como “Omegadrome” es muy versátil, permitiéndole reconfigurar su estructura según sus necesidades. Eso le permite a Victor tener acceso a una amplia gama de dispositivos y sensores sólo limitada por sus conocimientos técnicos..",
+        "id": 0
+        },
+        {
+            "img": "https://upload.wikimedia.org/wikipedia/en/5/58/Cyborg_%28Victor_Stone%29.jpg",
+            "nombreReal": "Koriand'r",
+            "nombreFicticio": "Starfire",
+            "Biografia":"Traicionados por su propia hija Komand'r, el rey Myand'r tuvo que pactar con la Ciudadela para evitar la destrucción de Tamaran entregando a su hija Koryand'r a cambio. Después de seis años de tortura, ambas hermanas fueron víctimas de un experimento Psion que potenció sus habilidades energéticas. Koryand'r logró escapar y llegar a la Tierra, dónde se unió a los Nuevos Jóvenes Titanes, equipo con el que ha colaborado desde entonces.",
+            "poderes": "Gracias a su fisiología tamaraniana, el cuerpo de Starfire es capaz de procesa y metabolizar energía procedente de los rayos ultravioleta.",
         "id": 1
         },
         {
-            "Nombre Real": "Koriand'r",
-            "NombreFicticio": "Starfire",
-            "Biografia":"Traicionados por su propia hija Komand'r, el rey Myand'r tuvo que pactar con la Ciudadela para evitar la destrucción de Tamaran entregando a su hija Koryand'r a cambio. Después de seis años de tortura, ambas hermanas fueron víctimas de un experimento Psion que potenció sus habilidades energéticas. Koryand'r logró escapar y llegar a la Tierra, dónde se unió a los Nuevos Jóvenes Titanes, equipo con el que ha colaborado desde entonces.",
-            "Poderes y habilidades": "Gracias a su fisiología tamaraniana, el cuerpo de Starfire es capaz de procesa y metabolizar energía procedente de los rayos ultravioleta.",
-            "id": 2
+            "img": "https://www.latercera.com/resizer/v2/5SUQ2RZJFJC73GVIATBCYQDPME.jpg?quality=80&smart=true&auth=b06f8d46d755e15cff6b2da95facba17f28dfa47b1815ad670b16beb6e1b0793&width=690&height=502",
+            "nombreReal": "Kara Zor-El",
+            "nombreFicticio": "SuperGirl",
+            "Biografia": "abiendo que su mundo estaba al borde de la destrucción, el científico kryptoniano Zor-El envió a su hija primogénita en una nave espacial hacía la Tierra para salvarla del desastre. Allí fue encontrada por los Kent, una pareja de jóvenes granjeros, quienes la adoptaron como hija propia con el nombre de “Linda” Con los años, Linda fue demostrando poco a poco su “especial” naturaleza, haciendo gala de unos poderes extraordinarios.",
+            "poderes": "Una gran fortaleza física, resistencia al daño su velocidad asombrosamente, volar, ver a través de los objetos o lanzar un “super-soplido” de fuerza increíble.",
+        "id": 2
+        },
+        {
+            "img":"https://i.ytimg.com/vi/NPPa5q8GwA4/maxresdefault.jpg",
+            "nombreReal": "Cassandra Cain",
+            "nombreFicticio": "Batgirl",
+            "Biografia": "Concebida para convertirse en la guardaespaldas perfecta para R'as al Ghul, a la edad de 8 años fue enviada por su padre David Cain a cumplir su primera misión. Creyendo que se traba de un juego, Cassandra asesinó a un hombre. Horrorizada por ello, decidió huir alejándose de su padre y de la la Liga de los Asesinos. Con 16 años, Cassandra llegó a Gotham, convirtiéndose en uno de los operativos de Oráculo durante [La Tierra de Nadie]. Tras salvar al comisario Gordon y con la aprobación de Batman y de la propia Bárbara, se convirtió en la nueva Batgirl. ",
+            "poderes":"Entrenada desde su nacimiento para ser un arma viviente.",
+        "id": 3
+        },
+        {
+            "img": "https://static.wikia.nocookie.net/doblaje/images/e/e9/Kyle_rayner.jpg/revision/latest?cb=20200523215056&path-prefix=es",
+            "nombreReal":"Kyle Rayner",
+            "nombreFicticio": "Linterna Verde",
+            "Biografia":"Kyle Rayner es el último miembro del Cuerpo de Linternas Verdes. Despues de que el Cuerpo fueses destruido por Hal Jordan, Ganthet huyó y entregó a Kyle el último de los anillos. Los primeros años como portador del anillo fueron duros: teniendo que vivir a la sombra de lo que fue Hal Jordan y del destino que tuvo, muchos fueron los que vieron con recelo a este nuevo Green Lantern. Cuando Kyle por fin acepto su papel como héroe, pronto fue aceptado por el resto de la comunidad superheroica, entablando una gran amistad con héroes como Flash (Wally West)) o Flecha Verde (Connor Hawke)",
+            "Poderes": "Como muchos Green Lanterns, posee una increible fuerza de voluntad.",
+        "id": 4
+        },
+        {
+            "img": "https://static.wikia.nocookie.net/actiontalesfanfict/images/5/56/1433649-martian_manhunter_super.jpg/revision/latest?cb=20110922213748&path-prefix=es",
+            "nombreReal":"Jonn Jonzz",
+            "nombreFicticio":"Detective Marciano",
+            "Biografia": "Hace mucho tiempo, en el que nosotros conocemos como el planeta Marte nacieron dos gemelos: uno fue llamado J’onn J’onnzz (“Luz a la Luz”) y otro llamado Maa’alef’ak (“Corazón de la Oscuridad”). Este último nació mutante y mientras J’onn se convirtió en Manhunter (equivalente a Policia en la Tierra) Maa’alef’ak sólo buscaba un modo de destruir a su sociedad, llegando a desarrollar un virus que, transmitido telepáticamente, aprovechaba el miedo natural de los marcianos al fuego para exterminarlos a todos. J’onn tuvo que contemplar como toda su familia moría contagiada y esto le llevo a la locura.",
+            "Poderes" :" J’onn controla a nivel molecular el bio-polimero que compone su cuerpo, pudiendo adoptar la forma y consistencia que él desee, pudiendo incluso atravesar objetos sólidos. Posee fuerza y resistencia aumentadas, rivalizando con la de los kryptonianos. ",
+            "id" : 5
         }
-        ]
+
+        ],
+    "superHeroesMarvel": [
+        {
+            "img" : "https://static.wikia.nocookie.net/actiontalesfanfict/images/a/a6/Silver_centurion.jpg/revision/latest?cb=20120531115427&path-prefix=es",
+            "nombreReal": "Tony Stark",
+            "nombreFicticio" : "Iron Man",
+            "Biografia" : " El billonario playboy, empresario e ingeniero genial Tony Stark sufrió una herida seria en su pecho durante su secuestro, orquestado para que diseñase armas de destrucción masiva para sus captores. En su lugar, el creó una armadura de combate para salvar sus vida y escapar de su cautiverio. Más tarde uso dicho diseño para proteger al mundo bajo el nombre de “Ironman”.",
+            "poderes" : "Stark es un creativo ingeniero y industrial, siempre desarrollando nuevas tecnologías y aparatos. Se le considera una de las tres personas más inteligentes del mundo.",
+        "id": 6
+        }
+    ]
             
 }
+

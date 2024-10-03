@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-image: url(../assets/images/background-dc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    
+}
+.superhero {
+    height: 500px;
+    overflow-y: auto;
+}
+.superhero img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+#contenedorSuperHeroes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
