@@ -1,0 +1,20 @@
+{
+    "superheroesDc":[ 
+        {
+        "img": "https://static.wikia.nocookie.net/actiontalesfanfict/images/a/a0/Cyborg_lowres.jpg/revision/latest?cb=20140902174858&path-prefix=es",
+        "NombreReal": "Victor Stone",
+        "nombreFicticio": "Cyborg",
+        "Biografia": "Cyborg es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por DC Comics. El personaje fue creado por el escritor Marv Wolfman y el artista George Pérez y apareció por primera vez en un suplemento especial en DC Comics Presents",
+        "Poderes y habilidades": "los implantes cibernéticos del cuerpo de Victor Gracias le proporcionan fuerza, resistencia y durabilidad superhumanas. Asimismo, le permite interconectarse físicamente con los ordenadores. Su tecnología, derivada del ingenio alienígena conocido como “Omegadrome” es muy versátil, permitiéndole reconfigurar su estructura según sus necesidades. Eso le permite a Victor tener acceso a una amplia gama de dispositivos y sensores sólo limitada por sus conocimientos técnicos..",
+        "id": 1
+        },
+        {
+            "Nombre Real": "Koriand'r",
+            "NombreFicticio": "Starfire",
+            "Biografia":"Traicionados por su propia hija Komand'r, el rey Myand'r tuvo que pactar con la Ciudadela para evitar la destrucción de Tamaran entregando a su hija Koryand'r a cambio. Después de seis años de tortura, ambas hermanas fueron víctimas de un experimento Psion que potenció sus habilidades energéticas. Koryand'r logró escapar y llegar a la Tierra, dónde se unió a los Nuevos Jóvenes Titanes, equipo con el que ha colaborado desde entonces.",
+            "Poderes y habilidades": "Gracias a su fisiología tamaraniana, el cuerpo de Starfire es capaz de procesa y metabolizar energía procedente de los rayos ultravioleta.",
+            "id": 2
+        }
+        ]
+            
+}
