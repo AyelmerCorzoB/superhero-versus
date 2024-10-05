@@ -1,65 +1,255 @@
 {
-    "superheroesDc":[ 
-        {
-            "img": "https://i0.wp.com/xn--oo-yjab.cl/wp-content/uploads/2016/03/dc-comics-personajes-principales-e1456777897793.jpeg?resize=640%2C360",
-            "nombreReal": "Victor Stone",
-            "nombreFicticio": "Cyborg",
-            "Biografia": "Cyborg es un superhéroe ficticio que aparece en los cómics estadounidenses publicados por DC Comics. El personaje fue creado por el escritor Marv Wolfman y el artista George Pérez y apareció por primera vez en un suplemento especial en DC Comics Presents",
-            "poderes": "los implantes cibernéticos del cuerpo de Victor Gracias le proporcionan fuerza, resistencia y durabilidad superhumanas. Asimismo, le permite interconectarse físicamente con los ordenadores. Su tecnología, derivada del ingenio alienígena conocido como “Omegadrome” es muy versátil, permitiéndole reconfigurar su estructura según sus necesidades. Eso le permite a Victor tener acceso a una amplia gama de dispositivos y sensores sólo limitada por sus conocimientos técnicos..",
-        "id": 0
-        },
-        {
-            "img": "https://upload.wikimedia.org/wikipedia/en/5/58/Cyborg_%28Victor_Stone%29.jpg",
-            "nombreReal": "Koriand'r",
-            "nombreFicticio": "Starfire",
-            "Biografia":"Traicionados por su propia hija Komand'r, el rey Myand'r tuvo que pactar con la Ciudadela para evitar la destrucción de Tamaran entregando a su hija Koryand'r a cambio. Después de seis años de tortura, ambas hermanas fueron víctimas de un experimento Psion que potenció sus habilidades energéticas. Koryand'r logró escapar y llegar a la Tierra, dónde se unió a los Nuevos Jóvenes Titanes, equipo con el que ha colaborado desde entonces.",
-            "poderes": "Gracias a su fisiología tamaraniana, el cuerpo de Starfire es capaz de procesa y metabolizar energía procedente de los rayos ultravioleta.",
-        "id": 1
-        },
-        {
-            "img": "https://www.latercera.com/resizer/v2/5SUQ2RZJFJC73GVIATBCYQDPME.jpg?quality=80&smart=true&auth=b06f8d46d755e15cff6b2da95facba17f28dfa47b1815ad670b16beb6e1b0793&width=690&height=502",
-            "nombreReal": "Kara Zor-El",
-            "nombreFicticio": "SuperGirl",
-            "Biografia": "abiendo que su mundo estaba al borde de la destrucción, el científico kryptoniano Zor-El envió a su hija primogénita en una nave espacial hacía la Tierra para salvarla del desastre. Allí fue encontrada por los Kent, una pareja de jóvenes granjeros, quienes la adoptaron como hija propia con el nombre de “Linda” Con los años, Linda fue demostrando poco a poco su “especial” naturaleza, haciendo gala de unos poderes extraordinarios.",
-            "poderes": "Una gran fortaleza física, resistencia al daño su velocidad asombrosamente, volar, ver a través de los objetos o lanzar un “super-soplido” de fuerza increíble.",
-        "id": 2
-        },
-        {
-            "img":"https://i.ytimg.com/vi/NPPa5q8GwA4/maxresdefault.jpg",
-            "nombreReal": "Cassandra Cain",
-            "nombreFicticio": "Batgirl",
-            "Biografia": "Concebida para convertirse en la guardaespaldas perfecta para R'as al Ghul, a la edad de 8 años fue enviada por su padre David Cain a cumplir su primera misión. Creyendo que se traba de un juego, Cassandra asesinó a un hombre. Horrorizada por ello, decidió huir alejándose de su padre y de la la Liga de los Asesinos. Con 16 años, Cassandra llegó a Gotham, convirtiéndose en uno de los operativos de Oráculo durante [La Tierra de Nadie]. Tras salvar al comisario Gordon y con la aprobación de Batman y de la propia Bárbara, se convirtió en la nueva Batgirl. ",
-            "poderes":"Entrenada desde su nacimiento para ser un arma viviente.",
-        "id": 3
-        },
-        {
-            "img": "https://static.wikia.nocookie.net/doblaje/images/e/e9/Kyle_rayner.jpg/revision/latest?cb=20200523215056&path-prefix=es",
-            "nombreReal":"Kyle Rayner",
-            "nombreFicticio": "Linterna Verde",
-            "Biografia":"Kyle Rayner es el último miembro del Cuerpo de Linternas Verdes. Despues de que el Cuerpo fueses destruido por Hal Jordan, Ganthet huyó y entregó a Kyle el último de los anillos. Los primeros años como portador del anillo fueron duros: teniendo que vivir a la sombra de lo que fue Hal Jordan y del destino que tuvo, muchos fueron los que vieron con recelo a este nuevo Green Lantern. Cuando Kyle por fin acepto su papel como héroe, pronto fue aceptado por el resto de la comunidad superheroica, entablando una gran amistad con héroes como Flash (Wally West)) o Flecha Verde (Connor Hawke)",
-            "Poderes": "Como muchos Green Lanterns, posee una increible fuerza de voluntad.",
-        "id": 4
-        },
-        {
-            "img": "https://static.wikia.nocookie.net/actiontalesfanfict/images/5/56/1433649-martian_manhunter_super.jpg/revision/latest?cb=20110922213748&path-prefix=es",
-            "nombreReal":"Jonn Jonzz",
-            "nombreFicticio":"Detective Marciano",
-            "Biografia": "Hace mucho tiempo, en el que nosotros conocemos como el planeta Marte nacieron dos gemelos: uno fue llamado J’onn J’onnzz (“Luz a la Luz”) y otro llamado Maa’alef’ak (“Corazón de la Oscuridad”). Este último nació mutante y mientras J’onn se convirtió en Manhunter (equivalente a Policia en la Tierra) Maa’alef’ak sólo buscaba un modo de destruir a su sociedad, llegando a desarrollar un virus que, transmitido telepáticamente, aprovechaba el miedo natural de los marcianos al fuego para exterminarlos a todos. J’onn tuvo que contemplar como toda su familia moría contagiada y esto le llevo a la locura.",
-            "Poderes" :" J’onn controla a nivel molecular el bio-polimero que compone su cuerpo, pudiendo adoptar la forma y consistencia que él desee, pudiendo incluso atravesar objetos sólidos. Posee fuerza y resistencia aumentadas, rivalizando con la de los kryptonianos. ",
-            "id" : 5
+    "DC_Comics": [
+      {
+        "id": 1,
+        "nombreReal": "Clark Kent / Kal-El",
+        "nombreFicticio": "Superman",
+        "Biografia": "Superman es un extraterrestre del planeta Krypton que fue enviado a la Tierra antes de la destrucción de su mundo. Criado como Clark Kent, se convierte en el mayor héroe de la humanidad.",
+        "poderes": "Fuerza sobrehumana, vuelo, visión láser, invulnerabilidad, supervelocidad.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPbg81he-DgyTBx6Ypl4_ni_EgphZshdJEQ&s"
+      },
+      {
+        "id": 2,
+        "nombreReal": "Bruce Wayne",
+        "nombreFicticio": "Batman",
+        "Biografia": "Bruce Wayne, después de presenciar el asesinato de sus padres, se entrenó física y mentalmente para luchar contra el crimen en Gotham como el vigilante conocido como Batman.",
+        "poderes": "Intelecto de genio, maestro de artes marciales, tecnología avanzada.",
+        "img": "https://gspawn.com/cdn/shop/products/a_main__61788.1616025064.1280.1280.jpg?v=1654972333&width=1445"
+      },
+      {
+        "id": 3,
+        "nombreReal": "Diana Prince",
+        "nombreFicticio": "Wonder Woman",
+        "Biografia": "Diana es una princesa amazona de la isla Themyscira, enviada al mundo de los humanos como embajadora de paz y justicia.",
+        "poderes": "Fuerza sobrehumana, vuelo, habilidades de combate, lazo de la verdad.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMkRySNXnT4nTrjLHtIlSpsE4bDompzs1Kw&s"
+      },
+      {
+        "id": 4,
+        "nombreReal": "Barry Allen",
+        "nombreFicticio": "The Flash",
+        "Biografia": "Barry Allen es un científico forense que, tras un accidente con rayos y productos químicos, obtiene la capacidad de moverse a velocidades extremas.",
+        "poderes": "Supervelocidad, manipulación del tiempo, vibración molecular.",
+        "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/09/flash-comics-dc-2826089.jpg?tf=1200x1200"
+      },
+      {
+        "id": 5,
+        "nombreReal": "Arthur Curry",
+        "nombreFicticio": "Aquaman",
+        "Biografia": "Arthur Curry es el rey de Atlantis y defensor de los océanos, capaz de comunicarse con las criaturas marinas.",
+        "poderes": "Superfuerza, control sobre la vida marina, capacidad de respirar bajo el agua.",
+        "img": "https://gspawn.com/cdn/shop/products/a_main__76269.1616023858.1280.1280.jpg?v=1654972441&width=1445"
+      },
+      {
+        "id": 6,
+        "nombreReal": "Hal Jordan",
+        "nombreFicticio": "Green Lantern",
+        "Biografia": "Hal Jordan, un piloto de pruebas, se convierte en miembro del Green Lantern Corps, una fuerza intergaláctica que mantiene la paz en el universo.",
+        "poderes": "Creación de constructos de energía, vuelo, proyección de energía con el anillo.",
+        "img": "https://pbs.twimg.com/media/DpAZJrcW4AYLmCq.jpg"
+      },
+      {
+        "id": 7,
+        "nombreReal": "Victor Stone",
+        "nombreFicticio": "Cyborg",
+        "Biografia": "Victor Stone es un joven mitad humano, mitad máquina, que fue reconstruido tras un accidente fatal utilizando tecnología avanzada.",
+        "poderes": "Fuerza sobrehumana, control de tecnología, armamento integrado.",
+        "img": "https://imgcdn.stablediffusionweb.com/2024/6/6/4dab7f31-cb43-4a54-bb44-4b8ef272073e.jpg"
+      },
+      {
+        "id": 8,
+        "nombreReal": "Oliver Queen",
+        "nombreFicticio": "Green Arrow",
+        "Biografia": "Oliver Queen es un multimillonario que, tras naufragar en una isla desierta, se entrenó para convertirse en un maestro arquero y vigilante.",
+        "poderes": "Maestro arquero, experto en combate cuerpo a cuerpo, tácticas avanzadas.",
+        "img": "https://i.pinimg.com/736x/63/52/e4/6352e4ccc3c8b3481e7ecac06824a064.jpg"
+      },
+      {
+        "id": 9,
+        "nombreReal": "Shazam",
+        "nombreFicticio": "Shazam",
+        "Biografia": "Billy Batson es un joven que, al pronunciar la palabra 'Shazam', se transforma en un superhéroe con los poderes de los dioses antiguos.",
+        "poderes": "Fuerza sobrehumana, vuelo, control de rayos.",
+        "img": "https://avatarfiles.alphacoders.com/180/thumb-1920-180257.jpg"
+      },
+      {
+        "id": 10,
+        "nombreReal": "John Constantine",
+        "nombreFicticio": "Constantine",
+        "Biografia": "John Constantine es un mago y detective sobrenatural que lucha contra amenazas demoníacas y fuerzas oscuras.",
+        "poderes": "Magia oscura, conjuros, conocimiento extenso de lo oculto.",
+        "img": "https://i0.wp.com/salondelmal.com/wp-content/uploads/2013/02/const_cv1_var.jpg?w=371&h=371&crop=1&ssl=1"
+      },
+      {
+        "id": 11,
+        "nombreReal": "J'onn J'onzz",
+        "nombreFicticio": "Martian Manhunter",
+        "Biografia": "J'onn J'onzz es el último sobreviviente de Marte y un héroe con la capacidad de cambiar de forma y leer mentes.",
+        "poderes": "Cambio de forma, telepatía, invisibilidad, vuelo.",
+        "img": "https://pm1.aminoapps.com/7764/2a3db811c7c6e7657ac2b83523dea855d06825ddr1-736-736v2_hq.jpg"
+      },
+      {
+        "id": 12,
+        "nombreReal": "Harleen Quinzel",
+        "nombreFicticio": "Harley Quinn",
+        "Biografia": "Harleen Quinzel era una psiquiatra que se enamoró del Joker y se convirtió en su aliada, adoptando la identidad de Harley Quinn.",
+        "poderes": "Habilidad con armas, combate cuerpo a cuerpo, inmunidad a toxinas.",
+        "img": "https://pyxis.nymag.com/v1/imgs/2a4/8af/9df884c9d4531053dde88a2d37c28f1cd2-13-harley-quinn.1x.rsquare.w1400.jpg"
+      },
+      {
+        "id": 13,
+        "nombreReal": "Slade Wilson",
+        "nombreFicticio": "Deathstroke",
+        "Biografia": "Slade Wilson es un mercenario y asesino con habilidades mejoradas, que lo convierten en uno de los hombres más peligrosos del mundo.",
+        "poderes": "Fuerza, agilidad, inteligencia mejorada, maestro de combate.",
+        "img": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/14/27/comics-deathstroke-1.jpg?crop=1xw:0.6514657980456026xh;center,top&resize=1200:*"
+      },
+      {
+        "id": 14,
+        "nombreReal": "Selina Kyle",
+        "nombreFicticio": "Catwoman",
+        "Biografia": "Selina Kyle es una ladrona maestra y ocasionalmente aliada y amante de Batman.",
+        "poderes": "Habilidad acrobática, combate cuerpo a cuerpo, maestra del sigilo.",
+        "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/12/catwoman-comics-3249794.jpg?tf=1200x1200"
+      },
+      {
+        "id": 15,
+        "nombreReal": "Lex Luthor",
+        "nombreFicticio": "Lex Luthor",
+        "Biografia": "Lex Luthor es uno de los mayores enemigos de Superman, un genio multimillonario con una mente criminal.",
+        "poderes": "Intelecto de genio, recursos ilimitados, armamento avanzado.",
+        "img": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/04f87ff7-4572-4d21-a02c-9d8d441976e8/di4cm3g-aea3d847-0272-42aa-afa1-edf56375eb08.jpg/v1/fill/w_900,h_900,q_75,strp/lex_luthor_by_gallerybrisart_di4cm3g-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA0Zjg3ZmY3LTQ1NzItNGQyMS1hMDJjLTlkOGQ0NDE5NzZlOFwvZGk0Y20zZy1hZWEzZDg0Ny0wMjcyLTQyYWEtYWZhMS1lZGY1NjM3NWViMDguanBnIiwiaGVpZ2h0IjoiPD05MDAiLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzA0Zjg3ZmY3LTQ1NzItNGQyMS1hMDJjLTlkOGQ0NDE5NzZlOFwvZ2FsbGVyeWJyaXNhcnQtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.2EtCGD_iNRdnbYFzxEogZdkSCl3Gg9wyhYDcL8pw1vI"
+      }
+    ],
+    "Marvel": [
+    {
+      "id": 1,
+      "nombreReal": "Steve Rogers",
+      "nombreFicticio": "Capitán América",
+      "Biografia": "Steve Rogers es un soldado de la Segunda Guerra Mundial transformado en un superhéroe por el suero del súper soldado.",
+      "poderes": "Fuerza, agilidad y resistencia mejoradas, experto en combate, uso del escudo.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-vAuR9kCsHsP-5fpOupsEJtW_KuEwcvDoSw&s",
+      "atributos": {
+            "fuerza_fisica": 100,
+            "velocidad": 95,
+            "resistencia": 100,
+            "inteligencia": 80,
+            "habilidades_especiales": 100
         }
-
-        ],
-    "superHeroesMarvel": [
-        {
-            "img" : "https://static.wikia.nocookie.net/actiontalesfanfict/images/a/a6/Silver_centurion.jpg/revision/latest?cb=20120531115427&path-prefix=es",
-            "nombreReal": "Tony Stark",
-            "nombreFicticio" : "Iron Man",
-            "Biografia" : " El billonario playboy, empresario e ingeniero genial Tony Stark sufrió una herida seria en su pecho durante su secuestro, orquestado para que diseñase armas de destrucción masiva para sus captores. En su lugar, el creó una armadura de combate para salvar sus vida y escapar de su cautiverio. Más tarde uso dicho diseño para proteger al mundo bajo el nombre de “Ironman”.",
-            "poderes" : "Stark es un creativo ingeniero y industrial, siempre desarrollando nuevas tecnologías y aparatos. Se le considera una de las tres personas más inteligentes del mundo.",
-        "id": 6
-        }
-    ]
+    },
+    {
+      "id": 2,
+      "nombreReal": "Tony Stark",
+      "nombreFicticio": "Iron Man",
+      "Biografia": "Tony Stark, un multimillonario e inventor, se convierte en Iron Man usando su armadura tecnológica.",
+      "poderes": "Tecnología avanzada, vuelo, armamento integrado en su traje.",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/iron-man-2-1554714458.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*"
+    },
+    {
+      "id": 3,
+      "nombreReal": "Peter Parker",
+      "nombreFicticio": "Spider-Man",
+      "Biografia": "Peter Parker es un joven que, tras ser mordido por una araña radiactiva, obtiene habilidades arácnidas que usa para combatir el crimen.",
+      "poderes": "Fuerza, agilidad, capacidad para trepar paredes, sentido arácnido.",
+      "img": "https://elcomercio.pe/resizer/3PNv0F4o44mYe6zWX8PuILMOgZk=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KUBO6HUFPVBBZGLNPJKI7DQP5Q.jpg"
+    },
+    {
+      "id": 4,
+      "nombreReal": "Bruce Banner",
+      "nombreFicticio": "Hulk",
+      "Biografia": "Bruce Banner se transforma en el increíble Hulk cuando se expone a la radiación gamma, convirtiéndose en una fuerza incontrolable.",
+      "poderes": "Fuerza sobrehumana, invulnerabilidad, curación acelerada.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEtDWDQYPK60E6CKQvHosqGaDKwixeUsLfjw&s"
+    },
+    {
+      "id": 5,
+      "nombreReal": "Thor Odinson",
+      "nombreFicticio": "Thor",
+      "Biografia": "Thor es el dios del trueno de Asgard, con el poder de Mjolnir y la responsabilidad de proteger los nueve reinos.",
+      "poderes": "Fuerza sobrehumana, control del trueno, vuelo con Mjolnir.",
+      "img": "https://i.pinimg.com/564x/85/fc/01/85fc01e16eba2d4ddb2fe03003a26554.jpg"
+    },
+    {
+      "id": 6,
+      "nombreReal": "Natasha Romanoff",
+      "nombreFicticio": "Black Widow",
+      "Biografia": "Natasha Romanoff es una espía y asesina entrenada por la KGB, convertida en una agente de S.H.I.E.L.D. y miembro de los Vengadores.",
+      "poderes": "Maestra del sigilo, combate cuerpo a cuerpo, experta en espionaje.",
+      "img": "https://img.freepik.com/fotos-premium/pinturas-pared-black-widow-hd-pinzas-dinamicas-estilo-arte-precision_899449-128776.jpg"
+    },
+    {
+      "id": 7,
+      "nombreReal": "Wanda Maximoff",
+      "nombreFicticio": "Scarlet Witch",
+      "Biografia": "Wanda Maximoff es una mutante con la capacidad de alterar la realidad y lanzar poderosos hechizos.",
+      "poderes": "Manipulación de la realidad, magia del caos, telequinesis.",
+      "img": "https://i.pinimg.com/736x/24/dd/57/24dd57e20a5e3404bcf9e38ff4bb2726.jpg"
+    },
+    {
+      "id": 8,
+      "nombreReal": "T'Challa",
+      "nombreFicticio": "Black Panther",
+      "Biografia": "T'Challa es el rey de Wakanda, un guerrero dotado con habilidades sobrehumanas gracias a la hierba en forma de corazón.",
+      "poderes": "Fuerza, velocidad, reflejos sobrehumanos, traje con tecnología avanzada.",
+      "img": "https://pyxis.nymag.com/v1/imgs/fae/425/58c79341af156913d20677dcf16cbe05fe-lede-.rsquare.w400.jpg"
+    },
+    {
+      "id": 9,
+      "nombreReal": "Stephen Strange",
+      "nombreFicticio": "Doctor Strange",
+      "Biografia": "Stephen Strange, un neurocirujano convertido en el Hechicero Supremo, protege la Tierra de amenazas místicas.",
+      "poderes": "Magia, manipulación de las artes místicas, creación de portales.",
+      "img": "https://i.pinimg.com/564x/68/de/67/68de67d0e7e29749470a3e66d9e20248.jpg"
+    },
+    {
+      "id": 10,
+      "nombreReal": "Clint Barton",
+      "nombreFicticio": "Hawkeye",
+      "Biografia": "Clint Barton es un arquero excepcional, antiguo agente de S.H.I.E.L.D. y miembro de los Vengadores.",
+      "poderes": "Maestro arquero, tácticas avanzadas, combate cuerpo a cuerpo.",
+      "img": "https://i.pinimg.com/564x/dc/cc/41/dccc419a7c2812e8769ebcb479ed8225.jpg"
+    },
+    {
+      "id": 11,
+      "nombreReal": "Carol Danvers",
+      "nombreFicticio": "Captain Marvel",
+      "Biografia": "Carol Danvers es una antigua piloto que, tras fusionarse con el ADN kree, obtiene habilidades cósmicas y se convierte en Captain Marvel.",
+      "poderes": "Fuerza cósmica, vuelo, absorción y proyección de energía.",
+      "img": "https://d.newsweek.com/en/full/1126954/captain-marvel-binary-form-powers-trailer-explained.jpg?w=1600&h=1600&q=88&f=cea85312fbf21989be36f3599fb63d51"
+    },
+    {
+      "id": 12,
+      "nombreReal": "Wade Wilson",
+      "nombreFicticio": "Deadpool",
+      "Biografia": "Wade Wilson es un mercenario bocazas con un factor de curación, lo que lo convierte en prácticamente inmortal.",
+      "poderes": "Curación acelerada, combate con armas, inmortalidad relativa.",
+      "img": "https://i.pinimg.com/564x/bb/30/71/bb30714db7dada54e55882d87a9ff593.jpg"
+    },
+    {
+      "id": 13,
+      "nombreReal": "Logan",
+      "nombreFicticio": "Wolverine",
+      "Biografia": "Logan es un mutante con un factor de curación y garras retráctiles de adamantium, miembro de los X-Men.",
+      "poderes": "Curación acelerada, garras de adamantium, sentidos mejorados.",
+      "img": "https://imgcdn.stablediffusionweb.com/2024/9/15/10efa790-24f6-4a96-ba96-849fe4ad2c44.jpg"
+    },
+    {
+      "id": 14,
+      "nombreReal": "Jean Grey",
+      "nombreFicticio": "Phoenix",
+      "Biografia": "Jean Grey es una poderosa mutante telepática que, tras unirse con la Fuerza Fénix, obtiene habilidades casi divinas.",
+      "poderes": "Telepatía, telequinesis, manipulación de la energía Fénix.",
+      "img": "https://i.pinimg.com/736x/c2/27/1e/c2271e546bd3f19a955ab4324a974f8a.jpg"
+    },
+    {
+      "id": 15,
+      "nombreReal": "Erik Lehnsherr",
+      "nombreFicticio": "Magneto",
+      "Biografia": "Erik Lehnsherr es un mutante con la capacidad de manipular el magnetismo y es el líder de los mutantes que luchan por la supremacía mutante.",
+      "poderes": "Control sobre el magnetismo, manipulación de metales, creación de campos magnéticos.",
+      "img": "https://i.pinimg.com/736x/d4/81/4d/d4814d4974190ef7bb40b1312fb3ffb4.jpg"
+    }
+  ]
             
 }
 

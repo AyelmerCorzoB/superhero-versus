@@ -7,7 +7,7 @@ botonDc.addEventListener("click",() => {
     fetch("../json/data.json")
     .then(response => response.json())
     .then(data => {
-    const DATA = data.superheroesDc;
+    const DATA = data.DC_Comics;
     mostrarSuperHeroesDc(DATA);
   })
 }
@@ -18,7 +18,7 @@ botonMarvel.addEventListener("click", ()=> {
     fetch("../json/data.json")
     .then(response => response.json())
     .then(data => {
-    const DATA = data.superHeroesMarvel;
+    const DATA = data.Marvel;
     mostrarSuperHeroesDc(DATA);
   })
 })
