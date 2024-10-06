@@ -1,23 +1,24 @@
-// showDc.js
-export function mostrarSuperHeroesDc(superheroes) {
+// showMarvel.js
+export function mostrarSuperHeroesMarvel(superheroes) {
     const contenedor = document.getElementById('contenedorSuperHeroes');
     contenedor.innerHTML = "";
     const cuerpo = document.getElementById("cuerpo");
-    cuerpo.style.backgroundImage = "url('../../assets/images/background-dc.jpg')";
+    cuerpo.style.backgroundImage = "url('../../assets/images/0e9b1e7319dae4b8046c5366d62532e3.jpg')";
     cuerpo.style.backgroundSize = "cover"; 
     cuerpo.style.backgroundPosition = "center"; 
     cuerpo.style.backgroundRepeat = "no-repeat"; 
     cuerpo.style.backdropFilter = "blur(5px) brightness(0.1) opacity(0.9)";
+    
 
-
-    const heroesPorPagina = 4;
+    const heroesPorPagina = 4; 
     let paginaActual = 1; 
     const totalPaginas = Math.ceil(superheroes.length / heroesPorPagina);
 
     let modalAbierto = null;
 
+   
     function mostrarPagina(pagina) {
-        contenedor.innerHTML = "";
+        contenedor.innerHTML = ""; 
         const inicio = (pagina - 1) * heroesPorPagina;
         const fin = inicio + heroesPorPagina;
         const heroesPagina = superheroes.slice(inicio, fin);
@@ -43,7 +44,7 @@ export function mostrarSuperHeroesDc(superheroes) {
             closeButton.className = 'close';
             closeButton.innerHTML = 'CERRAR';
 
-           
+            
             const heroImageLarge = document.createElement('img');
             heroImageLarge.src = hero.img;
             heroImageLarge.alt = hero.nombreFicticio;
@@ -91,19 +92,20 @@ export function mostrarSuperHeroesDc(superheroes) {
         actualizarBotonesPaginacion();
     }
 
+    
     const paginacionDiv = document.createElement('div');
     paginacionDiv.className = 'paginacion';
-    
+    paginacionDiv.innerHTML = "";
     document.body.appendChild(paginacionDiv);
 
     const botonAnterior = document.createElement('button');
-    
+    botonAnterior.innerHTML = "";
     botonAnterior.innerHTML = 'Anterior';
     botonAnterior.disabled = true;
     paginacionDiv.appendChild(botonAnterior);
 
     const botonSiguiente = document.createElement('button');
-    
+    botonSiguiente.innerHTML = '';
     botonSiguiente.innerHTML = 'Siguiente';
     paginacionDiv.appendChild(botonSiguiente);
 

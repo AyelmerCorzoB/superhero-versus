@@ -2,12 +2,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
-    background-image: url(../assets/images/background-dc.jpg);
+    background-image: url("https://deadline.com/wp-content/uploads/2055/03/Marvel-Studios-logo-DC-logo.jpg?w=1000");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
     color: white;
     
 }
@@ -42,24 +41,47 @@ body {
     border: 1px solid white;
     border-radius: 20px;
     height: max-content;
-    overflow-y: auto;
+    
+    
 }
 .superhero:hover {
     box-shadow: 0px 0px 10px white;
 }
 .superhero img {
-    width: 300px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     margin-bottom: 10px;
   }
   
 #contenedorSuperHeroes {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    column-gap: 5vw;
+    
 }
 
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+}
 
+.paginacion button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.paginacion button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
 
 .modal {
     display: none; /* Ocultar por defecto */
@@ -67,19 +89,18 @@ body {
     z-index: 1; /* Colocarlo por encima de otros elementos */
     left: 20%;
     top: 20%;
-    width: 50%; /* Ancho completo */
-    height: 50%; /* Alto completo */
-    background-color: rgb(0,0,0); /* Color de fondo negro */
-    background-color: rgba(0,0,0,0.4); /* Color de fondo negro con opacidad */
+    width: 50%; 
+    height: 50%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
 }
 
-/* Contenido del modal */
 .modal-content {
     background-color: black;
-    margin: 0; /* 15% desde la parte superior y centrado */
+    margin: 0; 
     padding: 20px;
     border: 1px solid #888;
-    width: 100%; /* Ancho del modal */
+    width: 100%; 
     display: grid; 
 }
 
