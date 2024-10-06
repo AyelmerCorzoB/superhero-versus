@@ -1,93 +1,170 @@
 {
-    "DC_Comics": [
-      {
-        "id": 1,
-        "nombreReal": "Clark Kent / Kal-El",
-        "nombreFicticio": "Superman",
-        "Biografia": "Superman es un extraterrestre del planeta Krypton que fue enviado a la Tierra antes de la destrucción de su mundo. Criado como Clark Kent, se convierte en el mayor héroe de la humanidad.",
-        "poderes": "Fuerza sobrehumana, vuelo, visión láser, invulnerabilidad, supervelocidad.",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPbg81he-DgyTBx6Ypl4_ni_EgphZshdJEQ&s"
-      },
-      {
-        "id": 2,
-        "nombreReal": "Bruce Wayne",
-        "nombreFicticio": "Batman",
-        "Biografia": "Bruce Wayne, después de presenciar el asesinato de sus padres, se entrenó física y mentalmente para luchar contra el crimen en Gotham como el vigilante conocido como Batman.",
-        "poderes": "Intelecto de genio, maestro de artes marciales, tecnología avanzada.",
-        "img": "https://gspawn.com/cdn/shop/products/a_main__61788.1616025064.1280.1280.jpg?v=1654972333&width=1445"
-      },
-      {
-        "id": 3,
-        "nombreReal": "Diana Prince",
-        "nombreFicticio": "Wonder Woman",
-        "Biografia": "Diana es una princesa amazona de la isla Themyscira, enviada al mundo de los humanos como embajadora de paz y justicia.",
-        "poderes": "Fuerza sobrehumana, vuelo, habilidades de combate, lazo de la verdad.",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMkRySNXnT4nTrjLHtIlSpsE4bDompzs1Kw&s"
-      },
-      {
-        "id": 4,
-        "nombreReal": "Barry Allen",
-        "nombreFicticio": "The Flash",
-        "Biografia": "Barry Allen es un científico forense que, tras un accidente con rayos y productos químicos, obtiene la capacidad de moverse a velocidades extremas.",
-        "poderes": "Supervelocidad, manipulación del tiempo, vibración molecular.",
-        "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/09/flash-comics-dc-2826089.jpg?tf=1200x1200"
-      },
-      {
-        "id": 5,
-        "nombreReal": "Arthur Curry",
-        "nombreFicticio": "Aquaman",
-        "Biografia": "Arthur Curry es el rey de Atlantis y defensor de los océanos, capaz de comunicarse con las criaturas marinas.",
-        "poderes": "Superfuerza, control sobre la vida marina, capacidad de respirar bajo el agua.",
-        "img": "https://gspawn.com/cdn/shop/products/a_main__76269.1616023858.1280.1280.jpg?v=1654972441&width=1445"
-      },
-      {
-        "id": 6,
-        "nombreReal": "Hal Jordan",
-        "nombreFicticio": "Green Lantern",
-        "Biografia": "Hal Jordan, un piloto de pruebas, se convierte en miembro del Green Lantern Corps, una fuerza intergaláctica que mantiene la paz en el universo.",
-        "poderes": "Creación de constructos de energía, vuelo, proyección de energía con el anillo.",
-        "img": "https://pbs.twimg.com/media/DpAZJrcW4AYLmCq.jpg"
-      },
-      {
-        "id": 7,
-        "nombreReal": "Victor Stone",
-        "nombreFicticio": "Cyborg",
-        "Biografia": "Victor Stone es un joven mitad humano, mitad máquina, que fue reconstruido tras un accidente fatal utilizando tecnología avanzada.",
-        "poderes": "Fuerza sobrehumana, control de tecnología, armamento integrado.",
-        "img": "https://imgcdn.stablediffusionweb.com/2024/6/6/4dab7f31-cb43-4a54-bb44-4b8ef272073e.jpg"
-      },
-      {
-        "id": 8,
-        "nombreReal": "Oliver Queen",
-        "nombreFicticio": "Green Arrow",
-        "Biografia": "Oliver Queen es un multimillonario que, tras naufragar en una isla desierta, se entrenó para convertirse en un maestro arquero y vigilante.",
-        "poderes": "Maestro arquero, experto en combate cuerpo a cuerpo, tácticas avanzadas.",
-        "img": "https://i.pinimg.com/736x/63/52/e4/6352e4ccc3c8b3481e7ecac06824a064.jpg"
-      },
-      {
-        "id": 9,
-        "nombreReal": "Shazam",
-        "nombreFicticio": "Shazam",
-        "Biografia": "Billy Batson es un joven que, al pronunciar la palabra 'Shazam', se transforma en un superhéroe con los poderes de los dioses antiguos.",
-        "poderes": "Fuerza sobrehumana, vuelo, control de rayos.",
-        "img": "https://avatarfiles.alphacoders.com/180/thumb-1920-180257.jpg"
-      },
-      {
-        "id": 10,
-        "nombreReal": "John Constantine",
-        "nombreFicticio": "Constantine",
-        "Biografia": "John Constantine es un mago y detective sobrenatural que lucha contra amenazas demoníacas y fuerzas oscuras.",
-        "poderes": "Magia oscura, conjuros, conocimiento extenso de lo oculto.",
-        "img": "https://i0.wp.com/salondelmal.com/wp-content/uploads/2013/02/const_cv1_var.jpg?w=371&h=371&crop=1&ssl=1"
-      },
-      {
-        "id": 11,
-        "nombreReal": "J'onn J'onzz",
-        "nombreFicticio": "Martian Manhunter",
-        "Biografia": "J'onn J'onzz es el último sobreviviente de Marte y un héroe con la capacidad de cambiar de forma y leer mentes.",
-        "poderes": "Cambio de forma, telepatía, invisibilidad, vuelo.",
-        "img": "https://pm1.aminoapps.com/7764/2a3db811c7c6e7657ac2b83523dea855d06825ddr1-736-736v2_hq.jpg"
-      },
+  "DC_Comics": [
+    {
+      "id": 1,
+      "nombreReal": "Clark Kent / Kal-El",
+      "nombreFicticio": "Superman",
+      "Biografia": "Superman es un extraterrestre del planeta Krypton que fue enviado a la Tierra antes de la destrucción de su mundo. Criado como Clark Kent, se convierte en el mayor héroe de la humanidad.",
+      "poderes": "Fuerza sobrehumana, vuelo, visión láser, invulnerabilidad, supervelocidad.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPbg81he-DgyTBx6Ypl4_ni_EgphZshdJEQ&s",
+      "atributos": {
+        "fuerza_fisica": 100,
+        "velocidad": 100,
+        "resistencia": 100,
+        "inteligencia": 80,
+        "habilidades_especiales": 90
+      }
+    },
+    {
+      "id": 2,
+      "nombreReal": "Bruce Wayne",
+      "nombreFicticio": "Batman",
+      "Biografia": "Bruce Wayne, después de presenciar el asesinato de sus padres, se entrenó física y mentalmente para luchar contra el crimen en Gotham como el vigilante conocido como Batman.",
+      "poderes": "Intelecto de genio, maestro de artes marciales, tecnología avanzada.",
+      "img": "https://gspawn.com/cdn/shop/products/a_main__61788.1616025064.1280.1280.jpg?v=1654972333&width=1445",
+      "atributos": {
+        "fuerza_fisica": 80,
+        "velocidad": 70,
+        "resistencia": 85,
+        "inteligencia": 100,
+        "habilidades_especiales": 95
+      }
+    },
+    {
+      "id": 3,
+      "nombreReal": "Diana Prince",
+      "nombreFicticio": "Wonder Woman",
+      "Biografia": "Diana es una princesa amazona de la isla Themyscira, enviada al mundo de los humanos como embajadora de paz y justicia.",
+      "poderes": "Fuerza sobrehumana, vuelo, habilidades de combate, lazo de la verdad.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtMkRySNXnT4nTrjLHtIlSpsE4bDompzs1Kw&s",
+      "atributos": {
+        "fuerza_fisica": 95,
+        "velocidad": 85,
+        "resistencia": 90,
+        "inteligencia": 75,
+        "habilidades_especiales": 90
+      }
+    },
+    {
+      "id": 4,
+      "nombreReal": "Barry Allen",
+      "nombreFicticio": "The Flash",
+      "Biografia": "Barry Allen es un científico forense que, tras un accidente con rayos y productos químicos, obtiene la capacidad de moverse a velocidades extremas.",
+      "poderes": "Supervelocidad, manipulación del tiempo, vibración molecular.",
+      "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/09/flash-comics-dc-2826089.jpg?tf=1200x1200",
+      "atributos": {
+        "fuerza_fisica": 70,
+        "velocidad": 100,
+        "resistencia": 80,
+        "inteligencia": 75,
+        "habilidades_especiales": 85
+      }
+    },
+    {
+      "id": 5,
+      "nombreReal": "Arthur Curry",
+      "nombreFicticio": "Aquaman",
+      "Biografia": "Arthur Curry es el rey de Atlantis y defensor de los océanos, capaz de comunicarse con las criaturas marinas.",
+      "poderes": "Superfuerza, control sobre la vida marina, capacidad de respirar bajo el agua.",
+      "img": "https://gspawn.com/cdn/shop/products/a_main__76269.1616023858.1280.1280.jpg?v=1654972441&width=1445",
+      "atributos": {
+        "fuerza_fisica": 90,
+        "velocidad": 75,
+        "resistencia": 90,
+        "inteligencia": 70,
+        "habilidades_especiales": 80
+      }
+    },
+    {
+      "id": 6,
+      "nombreReal": "Hal Jordan",
+      "nombreFicticio": "Green Lantern",
+      "Biografia": "Hal Jordan, un piloto de pruebas, se convierte en miembro del Green Lantern Corps, una fuerza intergaláctica que mantiene la paz en el universo.",
+      "poderes": "Creación de constructos de energía, vuelo, proyección de energía con el anillo.",
+      "img": "https://pbs.twimg.com/media/DpAZJrcW4AYLmCq.jpg",
+      "atributos": {
+        "fuerza_fisica": 70,
+        "velocidad": 75,
+        "resistencia": 80,
+        "inteligencia": 85,
+        "habilidades_especiales": 95
+      }
+    },
+    {
+      "id": 7,
+      "nombreReal": "Victor Stone",
+      "nombreFicticio": "Cyborg",
+      "Biografia": "Victor Stone es un joven mitad humano, mitad máquina, que fue reconstruido tras un accidente fatal utilizando tecnología avanzada.",
+      "poderes": "Fuerza sobrehumana, control de tecnología, armamento integrado.",
+      "img": "https://imgcdn.stablediffusionweb.com/2024/6/6/4dab7f31-cb43-4a54-bb44-4b8ef272073e.jpg",
+      "atributos": {
+        "fuerza_fisica": 85,
+        "velocidad": 70,
+        "resistencia": 90,
+        "inteligencia": 80,
+        "habilidades_especiales": 90
+      }
+    },
+    {
+      "id": 8,
+      "nombreReal": "Oliver Queen",
+      "nombreFicticio": "Green Arrow",
+      "Biografia": "Oliver Queen es un multimillonario que, tras naufragar en una isla desierta, se entrenó para convertirse en un maestro arquero y vigilante.",
+      "poderes": "Maestro arquero, experto en combate cuerpo a cuerpo, tácticas avanzadas.",
+      "img": "https://i.pinimg.com/736x/63/52/e4/6352e4ccc3c8b3481e7ecac06824a064.jpg",
+      "atributos": {
+        "fuerza_fisica": 75,
+        "velocidad": 70,
+        "resistencia": 80,
+        "inteligencia": 85,
+        "habilidades_especiales": 90
+      }
+    },
+    {
+      "id": 9,
+      "nombreReal": "Billy Batson",
+      "nombreFicticio": "Shazam",
+      "Biografia": "Billy Batson es un joven que, al pronunciar la palabra 'Shazam', se transforma en un superhéroe con los poderes de los dioses antiguos.",
+      "poderes": "Fuerza sobrehumana, vuelo, control de rayos.",
+      "img": "https://avatarfiles.alphacoders.com/180/thumb-1920-180257.jpg",
+      "atributos": {
+        "fuerza_fisica": 90,
+        "velocidad": 80,
+        "resistencia": 85,
+        "inteligencia": 75,
+        "habilidades_especiales": 95
+      }
+    },
+    {
+      "id": 10,
+      "nombreReal": "John Constantine",
+      "nombreFicticio": "Constantine",
+      "Biografia": "John Constantine es un mago y detective sobrenatural que lucha contra amenazas demoníacas y fuerzas oscuras.",
+      "poderes": "Magia oscura, conjuros, conocimiento extenso de lo oculto.",
+      "img": "https://i0.wp.com/salondelmal.com/wp-content/uploads/2013/02/const_cv1_var.jpg?w=371&h=371&crop=1&ssl=1",
+      "atributos": {
+        "fuerza_fisica": 60,
+        "velocidad": 65,
+        "resistencia": 70,
+        "inteligencia": 90,
+        "habilidades_especiales": 95
+      }
+    },
+    {
+      "id": 11,
+      "nombreReal": "J'onn J'onzz",
+      "nombreFicticio": "Martian Manhunter",
+      "Biografia": "J'onn J'onzz es el último sobreviviente de Marte y un héroe con la capacidad de cambiar de forma y leer mentes.",
+      "poderes": "Cambio de forma, telepatía, invisibilidad, vuelo.",
+      "img": "https://pm1.aminoapps.com/7764/2a3db811c7c6e7657ac25b26fbb250bcd7b25c1f4c1c6b58dcdb358db8e8e575c4f.jpg",
+      "atributos": {
+        "fuerza_fisica": 85,
+        "velocidad": 75,
+        "resistencia": 90,
+        "inteligencia": 95,
+        "habilidades_especiales": 100
+      }
+    },
       {
         "id": 12,
         "nombreReal": "Harleen Quinzel",
