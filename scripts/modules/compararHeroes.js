@@ -66,9 +66,9 @@ export function compararHeroes(dcHeroes, marvelHeroes) {
         resultadoDiv.className = 'resultado';
 
         if (personaje1 > personaje2) {
-            resultadoDiv.innerHTML = `<h2>${heroeDC.nombreFicticio} gana con un puntaje de ${personaje1}!</h2>`;
+            resultadoDiv.innerHTML = `<h2> <span>${heroeDC.nombreFicticio}</span> gana con un puntaje de ${personaje1}!</h2>`;
         } else if (personaje2 > personaje1) {
-            resultadoDiv.innerHTML = `<h2>${heroeMarvel.nombreFicticio} gana con un puntaje de ${personaje2}!</h2>`;
+            resultadoDiv.innerHTML = `<h2><span>${heroeMarvel.nombreFicticio}</span> gana con un puntaje de ${personaje2}!</h2>`;
         } else {
             resultadoDiv.innerHTML = `<h2>¡Es un empate! Ambos tienen un puntaje de ${personaje1}!</h2>`;
         }
