@@ -1,23 +1,21 @@
-// showDc.js
-export function mostrarSuperHeroesDc(superheroes) {
+export function mostrarSuperHeroes(superheroes) {
     const contenedor = document.getElementById('contenedorSuperHeroes');
     contenedor.innerHTML = "";
-    const cuerpo = document.getElementById("cuerpo");
-    cuerpo.style.backgroundImage = "url('../../assets/images/background-dc.jpg')";
-    cuerpo.style.backgroundSize = "cover"; 
-    cuerpo.style.backgroundPosition = "center"; 
-    cuerpo.style.backgroundRepeat = "no-repeat"; 
-    cuerpo.style.backdropFilter = "blur(5px) brightness(0.1) opacity(0.9)";
 
+    // Eliminar cualquier resultado previo
+    const resultadoPrevio = document.querySelector('.resultado');
+    if (resultadoPrevio) {
+        resultadoPrevio.remove();
+    }
 
-    const heroesPorPagina = 4;
+    const heroesPorPagina = 4; 
     let paginaActual = 1; 
     const totalPaginas = Math.ceil(superheroes.length / heroesPorPagina);
 
     let modalAbierto = null;
 
     function mostrarPagina(pagina) {
-        contenedor.innerHTML = "";
+        contenedor.innerHTML = ""; 
         const inicio = (pagina - 1) * heroesPorPagina;
         const fin = inicio + heroesPorPagina;
         const heroesPagina = superheroes.slice(inicio, fin);
@@ -31,7 +29,6 @@ export function mostrarSuperHeroesDc(superheroes) {
             heroImage.alt = hero.nombreFicticio;
             heroImage.style.cursor = 'pointer';
 
-            
             const modal = document.createElement('div');
             modal.className = 'modal';
             modal.style.display = 'none';
@@ -43,20 +40,18 @@ export function mostrarSuperHeroesDc(superheroes) {
             closeButton.className = 'close';
             closeButton.innerHTML = 'CERRAR';
 
-           
             const heroImageLarge = document.createElement('img');
             heroImageLarge.src = hero.img;
             heroImageLarge.alt = hero.nombreFicticio;
 
             const infoDiv = document.createElement('div');
-            infoDiv.innerHTML = `
+            infoDiv.innerHTML = ` 
                 <h2>${hero.nombreFicticio} ${hero.nombreReal}</h2>
                 <p>Biografía: ${hero.Biografia}</p>
                 <p>Poderes: ${hero.poderes}</p>
             `;
+            infoDiv.append(closeButton)
 
-            
-            modalContent.appendChild(closeButton);
             modalContent.appendChild(heroImageLarge);
             modalContent.appendChild(infoDiv);
             modal.appendChild(modalContent);
@@ -87,23 +82,24 @@ export function mostrarSuperHeroesDc(superheroes) {
             contenedor.appendChild(heroeDiv);
         });
 
-        
         actualizarBotonesPaginacion();
     }
 
-    const paginacionDiv = document.createElement('div');
-    paginacionDiv.className = 'paginacion';
-    
-    document.body.appendChild(paginacionDiv);
+    let paginacionDiv = document.querySelector('.paginacion');
+    if (!paginacionDiv) {
+        paginacionDiv = document.createElement('div');
+        paginacionDiv.className = 'paginacion';
+        document.body.appendChild(paginacionDiv);
+    } else {
+        paginacionDiv.innerHTML = ''; 
+    }
 
     const botonAnterior = document.createElement('button');
-    
     botonAnterior.innerHTML = 'Anterior';
     botonAnterior.disabled = true;
     paginacionDiv.appendChild(botonAnterior);
 
     const botonSiguiente = document.createElement('button');
-    
     botonSiguiente.innerHTML = 'Siguiente';
     paginacionDiv.appendChild(botonSiguiente);
 
@@ -122,9 +118,12 @@ export function mostrarSuperHeroesDc(superheroes) {
     });
 
     function actualizarBotonesPaginacion() {
+        const botonAnterior = paginacionDiv.querySelector('button:first-child');
+        const botonSiguiente = paginacionDiv.querySelector('button:last-child');
         botonAnterior.disabled = paginaActual === 1;
         botonSiguiente.disabled = paginaActual === totalPaginas;
     }
 
+    paginaActual = 1;
     mostrarPagina(paginaActual);
 }

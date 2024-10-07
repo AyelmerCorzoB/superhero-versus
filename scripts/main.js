@@ -1,5 +1,6 @@
-import { mostrarSuperHeroesDc } from "./modules/showDc.js";
-import { mostrarSuperHeroesMarvel } from "./modules/showMarvel.js";
+
+import { compararHeroes } from "./modules/compararHeroes.js";
+import { mostrarSuperHeroes } from "./modules/mostrarHeroes.js";
 
 const botonDc = document.getElementById("mostrarDc");
 botonDc.addEventListener("click", () => {
@@ -7,7 +8,7 @@ botonDc.addEventListener("click", () => {
     .then(response => response.json())
     .then(data => {
         const DATA = data.DC_Comics;
-        mostrarSuperHeroesDc(DATA);
+        mostrarSuperHeroes(DATA);
     });
 });
 
@@ -17,6 +18,17 @@ botonMarvel.addEventListener("click", () => {
     .then(response => response.json())
     .then(data => {
         const DATA = data.Marvel;
-        mostrarSuperHeroesMarvel(DATA);
+        mostrarSuperHeroes(DATA);
+    });
+});
+
+const botonContra = document.getElementById("contra");
+botonContra.addEventListener("click", () => {
+    fetch("../json/data.json")
+    .then(response => response.json())
+    .then(data => {
+        const dcHeroes = data.DC_Comics;
+        const marvelHeroes = data.Marvel;
+        compararHeroes(dcHeroes, marvelHeroes);
     });
 });

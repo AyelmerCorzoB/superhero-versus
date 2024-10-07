@@ -1,96 +1,99 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    
-    background-image: url("https://deadline.com/wp-content/uploads/2055/03/Marvel-Studios-logo-DC-logo.jpg?w=1000");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    background-color: cadetblue;
     color: white;
-    
+    line-height: 1.6;
 }
 
+/* Contenedor principal */
 #contenedorPrincipal {
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-}
-.botones {
-    width: 100%;
-    display: flex;
     align-items: center;
+    padding: 2vh 0;
+}
+
+/* Botones */
+.botones {
+    display: flex;
     justify-content: center;
-    column-gap: 20px;
+    gap: 20px;
     margin-top: 2vh;
     height: 8vh;
 }
-.botones #mostrarDc {
+
+.botones button {
+    width: 150px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#mostrarDc {
     background-color: rgb(62, 62, 207);
     color: white;
 }
-.botones #mostrarMarvel {
+
+#mostrarMarvel {
     background-color: red;
     color: white;
 }
 
-.botones button {
-    width: 20%;
-    height: 80%;
-    border: none;
+#mostrarDc:hover, #mostrarMarvel:hover {
+    cursor: pointer;
+    background-color: white;
+    color: inherit;
 }
 
-.botones #mostrarMarvel:hover {
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    color: red;
-}
-.botones #mostrarDc:hover {
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 60, 255);
-}
+/* Superhéroes */
 .superhero {
     margin-top: 2vh;
     border: 1px solid white;
-    padding: 10px;
+    padding: 20px;
     width: 100%;    
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .superhero:hover {
-    box-shadow: 0px 0px 10px white;
-    background-color: rgb(50, 10, 66);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+    background-color: rgba(50, 10, 66, 0.8);
 }
+
 .superhero img {
     width: 150px;
     height: 150px;
-    margin-bottom: 10px;
-  }
-  
-#contenedorSuperHeroes {
-    
-    display: flex;
-    column-gap: 5vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
 }
 
+#contenedorSuperHeroes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+/* Paginación */
 .paginacion {
     display: flex;
     justify-content: center;
-    
+    gap: 15px;
 }
 
 .paginacion button {
@@ -98,7 +101,13 @@ body {
     background-color: #333;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.paginacion button:hover {
+    background-color: #555;
 }
 
 .paginacion button:disabled {
@@ -106,61 +115,111 @@ body {
     cursor: not-allowed;
 }
 
+/* Modal */
 .modal {
     display: none; 
     position: fixed; 
     z-index: 1;
-    left: 28vw;
-    top: 12vh;
-    width: 40%; 
-    height: 50%; 
+    left: 10vw;
+    top: 10vh;
+    width: 800px; 
+    height: 440px; 
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 20px;
     
 }
 
 .modal-content {
-    background-color: rgb(0, 0, 0);
-    margin: 0; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 100%; 
+    background-color: transparent;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content img { 
-    width: 350px;
+    width: 280px;
+    height: 400px;
+    margin-bottom: 20px;
 }
-
 
 .close {
     color: white;
-    width: max-content;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    text-decoration: none;
     cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    flex: end;
 }
 
+.close:hover {
+    color: red;
+}
 
-
+/* Pelea y héroes */
 .pelea {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    gap: 30px;
 }
 
 .heroe {
     text-align: center;
-    background-color: aqua;
-    column-gap: 30px;
+    background-color: rgba(0, 150, 255, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.heroe:hover {
+    transform: scale(1.05);
 }
 
 .heroe img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
+    border-radius: 10px;
+}
+
+
+.comparacion {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.comparacion img {
+    width: 300px;
+    height: 280px;
+}
+
+.heroeDC {
+    width: 25vw;
+    
+}
+
+.heroeDC img{
+    width: 100%;
+}
+
+.heroeMarvel {
+    width: 25vw;
+}
+
+.heroeMarvel img {
+    width: 100%;
+}
+
+.resultado {
+    width: 100vw;
+    background-color: #666;
+    text-align: center;
 }
