@@ -1,88 +1,94 @@
-# 🦸‍♂️🦸‍♀️ Superhéroes DC vs Marvel 🦸‍♂️🦸‍♀️
+# 🦸‍♂️🦸‍♀️ Superhéroes DC vs Marvel
 
 ¡Bienvenido al proyecto **Superhéroes DC vs Marvel**! 🎉  
-Este es un proyecto interactivo que te permite explorar y comparar personajes de dos de los universos de cómics más famosos: **DC Comics** y **Marvel**. Puedes ver los personajes de cada universo, compararlos en un emocionante **1 vs 1 aleatorio**, y descubrir quién es el más poderoso. ¡Perfecto para los amantes de los cómics y los superhéroes! 💥
+Una experiencia interactiva donde puedes **explorar** y **comparar** personajes de los universos más icónicos del cómic: **DC Comics** y **Marvel**.  
+Perfecto para fanáticos de los superhéroes. 💥
 
----
+🌐 **Versión en línea:**  
+👉 [https://superheroversus.netlify.app/](https://superheroversus.netlify.app/)
+
 
 ## ✨ Características Principales
 
-- **Explorar Personajes**: Visualiza los personajes de DC Comics y Marvel con sus imágenes, biografías y poderes. 📚
-- **1 vs 1 Aleatorio**: Compara dos superhéroes aleatorios (uno de DC y otro de Marvel) y descubre quién es más poderoso. 🥊
-- **Paginación**: Navega fácilmente entre los personajes con un sistema de paginación. 📄
-- **Modales Interactivos**: Haz clic en la imagen de un superhéroe para ver más detalles en un modal. 🖼️
-- **Diseño Responsivo**: Interfaz amigable y adaptable a diferentes dispositivos. 📱💻
+- 🔍 **Explorar Personajes**  
+  Visualiza héroes de DC y Marvel con su biografía, imagen y lista de poderes.
 
----
+- ⚔️ **Comparación 1 vs 1 Aleatoria**  
+  Compara aleatoriamente un héroe de DC contra uno de Marvel según sus atributos.
 
-## 🛠️ Cómo Usar
+- 📄 **Paginación Dinámica**  
+  Navega entre personajes fácilmente gracias al sistema de paginación.
 
-1. **Mostrar Personajes**:
-   - Haz clic en **"Mostrar Personajes DC"** para ver los superhéroes de DC Comics.
-   - Haz clic en **"Mostrar Personajes Marvel"** para ver los superhéroes de Marvel.
-2. **Comparar Superhéroes**:
-   - Haz clic en **"1 vs 1 Aleatorio"** para comparar un superhéroe de DC con uno de Marvel.
-   - El sistema calculará automáticamente quién es más poderoso basado en sus atributos.
-3. **Ver Detalles**:
-   - Haz clic en la imagen de cualquier superhéroe para abrir un modal con su biografía y poderes.
+- 🖼️ **Modales Interactivos**  
+  Accede a información detallada de cada personaje al hacer clic en su imagen.
 
----
+- 📱 **Diseño Responsivo**  
+  Interfaz optimizada para todos los tamaños de pantalla.
 
-## 🖥️ Ejemplo de Uso
+## 🚀 ¿Cómo Usar?
 
-1. Haz clic en **"Mostrar Personajes DC"**.
-2. Verás una lista de superhéroes de DC Comics con sus imágenes y nombres.
-3. Haz clic en **"1 vs 1 Aleatorio"**.
-4. El sistema seleccionará un superhéroe de DC y otro de Marvel, los comparará y mostrará el resultado después de 2 segundos.
-5. Haz clic en la imagen de cualquier superhéroe para ver más detalles en un modal.
+1. **Mostrar Personajes**  
+   - Haz clic en **"Mostrar Personajes DC"** o **"Mostrar Personajes Marvel"**.
 
----
+2. **Comparar Superhéroes**  
+   - Haz clic en **"1 vs 1 Aleatorio"** para enfrentar dos personajes seleccionados al azar.
 
-## 📂 Estructura del Proyecto
-````bash
+3. **Ver Detalles**  
+   - Haz clic sobre cualquier carta para abrir un **modal** con su información completa.
+
+
+## 🖼️ Capturas de Pantalla
+
+| Exploración de personajes                                                                                | Comparación aleatoria                                                                                    | Modal de detalles                                                                                        |
+|----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/user-attachments/assets/0f949879-cc8c-4edd-a662-68bf10aaf3ca" width="300"/> | <img src="https://github.com/user-attachments/assets/e5bafa54-6fe7-4cf3-a084-93eb898da659" width="300"/> | <img src="https://github.com/user-attachments/assets/6ccdfe19-f14d-46eb-9021-8a57cd25ee90" width="300"/> |
+
+## 📁 Estructura del Proyecto
+
+```
+
 superheroes-dc-vs-marvel/
-├── index.html # Página principal del proyecto.
+├── index.html                 # Página principal
 ├── styles/
-│ └── styles.css # Estilos CSS para la interfaz.
+│   └── styles.css             # Estilos generales
 ├── scripts/
-│ ├── main.js # Punto de entrada del proyecto.
-│ ├── modules/
-│ │ ├── compararHeroes.js # Lógica para comparar superhéroes.
-│ │ └── mostrarHeroes.js # Lógica para mostrar superhéroes.
+│   ├── main.js                # Inicialización y control general
+│   └── modules/
+│       ├── compararHeroes.js # Comparación de personajes
+│       └── mostrarHeroes.js  # Renderizado de cartas de héroes
 ├── json/
-│ └── data.json # Datos de los superhéroes (DC y Marvel).
-└── README.md # Documentación del proyecto.
-````
+│   └── data.json              # Datos de los superhéroes
+├── assets/
+│   ├── captura-explorar.png
+│   ├── captura-comparar.png
+│   └── captura-modal.png
+└── README.md                  # Documentación del proyecto
 
+```
 
----
+## 🧰 Tecnologías Utilizadas
 
-## 🚀 Requisitos
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (ES6+)**  
+- **Fetch API** para la carga dinámica del archivo JSON  
+- **Módulos JS** para separar la lógica en archivos reutilizables
 
-- Navegador web moderno (Chrome, Firefox, Safari, Edge, etc.). 🌐
+## ✅ Requisitos
 
----
+- Navegador moderno (Chrome, Firefox, Safari, Edge, etc.)
 
-## 🛠️ Tecnologías Utilizadas
-
-- **HTML**: Estructura de la página.
-- **CSS**: Estilos para la interfaz.
-- **JavaScript**: Lógica y manejo de eventos.
-- **Fetch API**: Para cargar los datos de los superhéroes desde un archivo JSON.
-- **Modulación en JS**: Organización del código en módulos reutilizables.
-
----
 
 ## 🙌 Contribuciones
 
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el proyecto, no dudes en hacer un fork y enviar un pull request. 🛠️
+¿Tienes ideas o sugerencias?  
+¡Haz un fork del proyecto, crea una rama y envía un pull request!  
+Toda contribución es bienvenida. 🛠️
 
----
 
-## 📞 Contacto
+## 📬 Contacto
 
-Si tienes alguna pregunta o sugerencia, no dudes en contactarme. ¡Espero que disfrutes usando **Superhéroes DC vs Marvel**! 😊
+¿Tienes dudas o sugerencias?  
+Puedes dejar un comentario o contactarme directamente.  
+¡Gracias por visitar este proyecto y que disfrutes explorando a tus superhéroes favoritos! 🚀
 
----
-
-¡Gracias por visitar este proyecto! ¡Diviértete explorando y comparando a tus superhéroes favoritos! 🚀
