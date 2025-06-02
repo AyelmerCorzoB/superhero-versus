@@ -126,7 +126,7 @@
       "nombreFicticio": "Shazam",
       "Biografia": "Billy Batson es un joven que, al pronunciar la palabra 'Shazam', se transforma en un superhéroe con los poderes de los dioses antiguos.",
       "poderes": "Fuerza sobrehumana, vuelo, control de rayos.",
-      "img": "https://avatarfiles.alphacoders.com/180/thumb-1920-180257.jpg",
+      "img": "https://mundosuperman.com/wp-content/uploads/2018/01/zha.jpg",
       "atributos": {
         "fuerza_fisica": 90,
         "velocidad": 80,
@@ -156,7 +156,7 @@
       "nombreFicticio": "Martian Manhunter",
       "Biografia": "J'onn J'onzz es el último sobreviviente de Marte y un héroe con la capacidad de cambiar de forma y leer mentes.",
       "poderes": "Cambio de forma, telepatía, invisibilidad, vuelo.",
-      "img": "https://pm1.aminoapps.com/7764/2a3db811c7c6e7657ac25b26fbb250bcd7b25c1f4c1c6b58dcdb358db8e8e575c4f.jpg",
+      "img": "https://sm.ign.com/t/ign_latam/screenshot/default/marciano_nyap.1280.jpg",
       "atributos": {
         "fuerza_fisica": 85,
         "velocidad": 75,
@@ -235,11 +235,11 @@
         "poderes": "Fuerza, agilidad y resistencia mejoradas, experto en combate, uso del escudo.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-vAuR9kCsHsP-5fpOupsEJtW_KuEwcvDoSw&s",
         "atributos": {
-              "fuerza_fisica": 100,
-              "velocidad": 95,
-              "resistencia": 100,
-              "inteligencia": 80,
-              "habilidades_especiales": 100
+              "fuerza_fisica": 7,
+              "velocidad": 7,
+              "resistencia": 7,
+              "inteligencia": 5,
+              "habilidades_especiales": 6
           }
       },
       {
@@ -250,11 +250,11 @@
         "poderes": "Tecnología avanzada, vuelo, armamento integrado en su traje.",
         "img": "https://hips.hearstapps.com/hmg-prod/images/iron-man-2-1554714458.jpg?crop=0.5625xw:1xh;center,top&resize=1200:*",
         "atributos": {
-              "fuerza_fisica": 80,
-              "velocidad": 40,
-              "resistencia": 80,
-              "inteligencia": 100,
-              "habilidades_especiales": 100
+              "fuerza_fisica": 6,
+              "velocidad": 5,
+              "resistencia": 6,
+              "inteligencia": 10,
+              "habilidades_especiales": 5
           }
       },
       {
@@ -265,11 +265,11 @@
         "poderes": "Fuerza, agilidad, capacidad para trepar paredes, sentido arácnido.",
         "img": "https://elcomercio.pe/resizer/3PNv0F4o44mYe6zWX8PuILMOgZk=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KUBO6HUFPVBBZGLNPJKI7DQP5Q.jpg",
         "atributos": {
-              "fuerza_fisica": 96,
-              "velocidad": 96,
-              "resistencia": 100,
-              "inteligencia": 90,
-              "habilidades_especiales": 90
+              "fuerza_fisica": 10,
+              "velocidad": 8,
+              "resistencia": 10,
+              "inteligencia": 9,
+              "habilidades_especiales": 9
           }
       },
       {
@@ -280,11 +280,11 @@
         "poderes": "Fuerza sobrehumana, invulnerabilidad, curación acelerada.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEtDWDQYPK60E6CKQvHosqGaDKwixeUsLfjw&s",
         "atributos": {
-              "fuerza_fisica": 90,
-              "velocidad": 75,
-              "resistencia": 100,
-              "inteligencia": 20,
-              "habilidades_especiales": 100
+              "fuerza_fisica": 10,
+              "velocidad": 7,
+              "resistencia": 10,
+              "inteligencia": 10,
+              "habilidades_especiales": 10
           }
       },
       {
@@ -295,11 +295,11 @@
         "poderes": "Fuerza sobrehumana, control del trueno, vuelo con Mjolnir.",
         "img": "https://i.pinimg.com/564x/85/fc/01/85fc01e16eba2d4ddb2fe03003a26554.jpg",
         "atributos": {
-              "fuerza_fisica": 100,
-              "velocidad": 95,
-              "resistencia": 100,
-              "inteligencia": 80,
-              "habilidades_especiales": 100
+              "fuerza_fisica": 10,
+              "velocidad": 6,
+              "resistencia": 10,
+              "inteligencia": 5,
+              "habilidades_especiales": 10
           }
       },
       {
@@ -310,11 +310,11 @@
         "poderes": "Maestra del sigilo, combate cuerpo a cuerpo, experta en espionaje.",
         "img": "https://img.freepik.com/fotos-premium/pinturas-pared-black-widow-hd-pinzas-dinamicas-estilo-arte-precision_899449-128776.jpg",
         "atributos": {
-          "fuerza_fisica": 90,
-          "velocidad": 80,
-          "resistencia": 85,
-          "inteligencia": 75,
-          "habilidades_especiales": 95
+          "fuerza_fisica": 7,
+          "velocidad": 6,
+          "resistencia": 7,
+          "inteligencia": 7,
+          "habilidades_especiales": 5
         }
       },
       {
@@ -425,6 +425,5 @@
       "img": "https://i.pinimg.com/736x/d4/81/4d/d4814d4974190ef7bb40b1312fb3ffb4.jpg"
     }
   ]
-            
 }
 

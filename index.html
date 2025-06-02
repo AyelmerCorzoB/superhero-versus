@@ -3,21 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperHeroes </title>
+    <title>Superhero Universe | Marvel vs DC</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
-    <script type="module" src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="module" src="scripts/main.js" defer></script>
 </head>
-<body id="cuerpo">
-    <div id="contenedorPrincipal">
-        <div class="botones">
-            <button id="mostrarMarvel">Mostrar Personajes MARVEL</button>
-            <button id="contra">1 VS 1 Aleatorio</button>
-            <button id="mostrarDc">Mostrar Personajes DC</button>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-dc">DC</span>
+            <span class="logo-vs">VS</span>
+            <span class="logo-marvel">MARVEL</span>
         </div>
-        
-        <div id="contenedorSuperHeroes"></div>
+        <h1>Superhero Universe</h1>
+    </header>
+
+    <main>
+        <section class="controls">
+            <div class="search-container">
+                <input type="text" id="searchHero" placeholder="Search heroes...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="universe-buttons">
+                <button id="mostrarMarvel" class="universe-btn marvel-btn">
+                    <i class="fas fa-mask"></i> Marvel Heroes
+                </button>
+                <button id="contra" class="universe-btn battle-btn">
+                    <i class="fas fa-bolt"></i> Random Battle
+                </button>
+                <button id="mostrarDc" class="universe-btn dc-btn">
+                    <i class="fas fa-shield-alt"></i> DC Heroes
+                </button>
+            </div>
+        </section>
+
+        <section id="heroContainer">
+            <div id="contenedorSuperHeroes" class="heroes-grid"></div>
+            <div id="paginationContainer" class="pagination-container"></div>
+        </section>
+
+        <section id="battleArena" class="battle-arena hidden">
+            <div class="battle-title">
+                <h2>SUPERHERO BATTLE</h2>
+                <p>¿Quién saldrá victorioso?</p>
+            </div>
+            <div class="battle-container">
+                <div id="heroDcContainer" class="hero-battle-card dc"></div>
+                <div class="versus-container">
+                    <div class="versus-circle">VS</div>
+                    <div id="battleResult" class="battle-result"></div>
+                </div>
+                <div id="heroMarvelContainer" class="hero-battle-card marvel"></div>
+            </div>
+            <button id="newBattle" class="new-battle-btn">NEW BATTLE</button>
+        </section>
+    </main>
+
+    <div id="heroModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-hero-content"></div>
+        </div>
     </div>
-    
-    
+
+    <footer>
+        <p>&copy; 2025 Superhero Universe | Marvel & DC Comics characters are property of their respective owners</p>
+    </footer>
 </body>
 </html>
