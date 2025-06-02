@@ -54,14 +54,14 @@ superheroes-dc-vs-marvel/
 ├── scripts/
 │   ├── main.js                # Inicialización y control general
 │   └── modules/
-│       ├── compararHeroes.js # Comparación de personajes
-│       └── mostrarHeroes.js  # Renderizado de cartas de héroes
+│       ├── battleSystem.js # Comparación de personajes
+│       ├── dataManager.js # receptor de personajes
+│       ├── displayHeroes.js # mostrador de personajes
+│       ├── modalSystem.js # detalles de los personajes
+│       ├── paginationSystem.js # paginacion entre la cantidad de personajes
+│       └── searchSystem.js  # buscador de los personajes
 ├── json/
 │   └── data.json              # Datos de los superhéroes
-├── assets/
-│   ├── captura-explorar.png
-│   ├── captura-comparar.png
-│   └── captura-modal.png
 └── README.md                  # Documentación del proyecto
 
 ```
