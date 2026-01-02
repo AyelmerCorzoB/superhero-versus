@@ -1,0 +1,5 @@
+import { displayHeroes } from "../../src/scripts/displayHeroes" 
+import { initializeBattle } from "../../src/scripts/battleSystem" 
+import { setupSearch } from "../../src/scripts/searchSystem" 
+import { fetchData } from "../../src/scripts/dataManager" 
+import { setupModal } from "../../src/scripts/modalSystem" 

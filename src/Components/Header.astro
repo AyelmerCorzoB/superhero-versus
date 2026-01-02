@@ -1,0 +1,48 @@
+---
+// src/components/Header.astro
+import Controls from "../Components/Controls.astro";
+---
+
+<header
+    class="fixed top-0 left-0 right-0 z-50 bg-neutral-900/95 backdrop-blur shadow-lg"
+>
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <!-- LEFT: LOGO + TITLE -->
+        <div class="flex items-center gap-6">
+            <!-- LOGO + TITULO -->
+            <a
+                href="/"
+                class="group flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-lg font-extrabold tracking-wide transform transition-all duration-300 hover:scale-105"
+            >
+                <!-- NOMBRE HÉROES -->
+                <div class="flex items-center gap-1 sm:gap-2">
+                    <span
+                        class="text-red-600 group-hover:text-red-500 transition-colors duration-300 font-bold"
+                        >MARVEL</span
+                    >
+                    <span
+                        class="text-neutral-400 text-2xl mx-1 font-extrabold group-hover:text-neutral-200 transition-colors duration-300"
+                        >VS</span
+                    >
+                    <span
+                        class="text-blue-500 group-hover:text-blue-400 transition-colors duration-300 font-bold"
+                        >DC</span
+                    >
+                </div>
+
+                <!-- SUBTITULO -->
+                <span
+                    class="hidden sm:block text-sm tracking-widest text-neutral-400 relative group-hover:text-white transition-colors duration-300"
+                >
+                    Inicio
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                    ></span>
+                </span>
+            </a>
+        </div>
+
+        <!-- RIGHT: CONTROLS -->
+        <Controls />
+    </div>
+</header>

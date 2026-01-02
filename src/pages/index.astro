@@ -1,0 +1,229 @@
+---
+import "../styles/global.css";
+import Layout from "../Layout/Layout.astro";
+import Header from "../Components/Header.astro";
+import BattleArena from "../Components/BattleArena.astro";
+import HeroModal from "../Components/HeroModal.astro";
+
+const currentYear = new Date().getFullYear();
+// Client-side scripts will handle the dynamic content
+---
+
+<Layout title="Superhero Universe | Marvel vs DC">
+  <Header />
+
+  <main class="flex flex-col items-center justify-center min-h-screen bg-black/80 pt-24 pb-24 px-4 sm:px-6 lg:px-8">
+    
+    <!-- HERO DE BIENVENIDA -->
+    <section
+      id="welcomeHero"
+      class="flex flex-col items-center justify-center mx-auto w-full max-w-4xl text-center px-4 py-16 sm:py-20 text-white rounded-xl"
+    >
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-clip-text text-transparent drop-shadow-lg">
+        Bienvenido al Superhero Universe
+      </h1>
+      <p class="text-base sm:text-lg mb-4">
+        Explora héroes de <span class="text-red-500 font-bold">Marvel</span> y
+        <span class="text-blue-500 font-bold">DC</span>, enfréntalos en batallas y descubre sus poderes únicos.
+      </p>
+      <p class="text-sm sm:text-base text-neutral-300">
+        Esta página consume la <a target="_blank" href="https://superheroapi.com/"><strong>Superhero API</strong></a> para obtener información de personajes de manera dinámica.
+      </p>
+      
+    </section>
+
+    <!-- CONTENEDOR DE HÉROES -->
+    <section
+      id="heroContainer"
+      class="mx-auto w-full max-w-7xl px-4 py-3 hidden"
+    >
+      <div
+        id="contenedorSuperHeroes"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <!-- Héroes cargados dinámicamente -->
+      </div>
+
+      <div
+        id="paginationContainer"
+        class="fixed bottom-22 left-0 right-0 z-50 flex justify-center pointer-events-none"
+      ></div>
+    </section>
+
+    <BattleArena isVisible={false} />
+
+  </main>
+
+  <HeroModal />
+
+  <!-- FOOTER FIXED -->
+  <footer class="fixed bottom-0 left-0 right-0 bg-neutral-900 text-neutral-400 py-3 border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <!-- Marca y año -->
+      <div class="flex items-center gap-2">
+        <span class="text-white font-bold text-lg">AyelmerCorzoB</span>
+        <span class="hidden sm:inline">|</span>
+        <span class="text-sm">&copy; {currentYear}</span>
+      </div>
+
+      <!-- Créditos -->
+      <p class="text-xs md:text-sm text-center md:text-left">
+        Marvel & DC Comics characters are property of their respective owners.
+      </p>
+
+      <!-- Redes sociales -->
+      <div class="flex gap-4 mt-2 md:mt-0">
+        <a href="https://github.com/AyelmerCorzoB" target="_blank" rel="noopener" class="hover:text-white transition-colors">
+          <i class="fab fa-github text-lg"></i>
+        </a>
+        <a href="https://twitter.com/CorzoR_" target="_blank" rel="noopener" class="hover:text-blue-400 transition-colors">
+          <i class="fab fa-twitter text-lg"></i>
+        </a>
+        <a href="https://linkedin.com/in/AyelmerCorzoB" target="_blank" rel="noopener" class="hover:text-blue-600 transition-colors">
+          <i class="fab fa-linkedin text-lg"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</Layout>
+
+
+	<script>
+		
+
+		document.addEventListener("DOMContentLoaded", () => {
+			console.log("DOM loaded, initializing app...");
+
+			// Carga todos los módulos desde la carpeta correcta
+			Promise.all([
+				import("../scripts/dataManager.js"),
+				import("../scripts/displayHeroes.js"),
+				import("../scripts/battleSystem.js"),
+				import("../scripts/searchSystem.js"),
+				import("../scripts/modalSystem.js"),
+			])
+				.then((modules) => {
+					const [
+						dataManager,
+						displayHeroes,
+						battleSystem,
+						searchSystem,
+						modalSystem,
+					] = modules;
+					console.log("All modules loaded");
+
+					// Inicializa modal y búsqueda inmediatamente
+					modalSystem.setupModal();
+					searchSystem.setupSearch();
+
+					// Carga y muestra héroes de Marvel por defecto
+					// dataManager
+					// 	.fetchData()
+					// 	.then((allHeroes: any[]) => {
+					// 		if (!allHeroes || allHeroes.length === 0) {
+					// 			console.error("No heroes data loaded");
+					// 			return;
+					// 		}
+
+					// 		// Filtrar héroes de Marvel
+					// 		const marvelHeroes = allHeroes.filter((h: any) =>
+					// 			h.biography?.publisher
+					// 				?.toLowerCase()
+					// 				.includes("marvel"),
+					// 		);
+
+					// 		console.log(
+					// 			`Loaded ${marvelHeroes.length} Marvel heroes`,
+					// 		);
+					// 		displayHeroes.displayHeroes(marvelHeroes, "marvel");
+					// 	})
+					// 	.catch((error) => {
+					// 		console.error("Error loading heroes:", error);
+					// 	});
+
+					// Configura event listeners para los botones
+					setupButtonListeners(
+						dataManager,
+						displayHeroes,
+						battleSystem,
+					);
+				})
+				.catch((error) => {
+					console.error("Error loading modules:", error);
+				});
+		});
+
+		function setupButtonListeners(
+			dataManager: any,
+			displayHeroes: any,
+			battleSystem: any,
+		) {
+			const welcomeHero = document.getElementById("welcomeHero");
+			const heroContainer = document.getElementById("heroContainer");
+
+			const showHeroes = (heroes: any[], universe: string) => {
+				if (welcomeHero) welcomeHero.classList.add("hidden");
+				if (heroContainer) heroContainer.classList.remove("hidden");
+
+				displayHeroes.displayHeroes(heroes, universe);
+			};
+
+			// Marvel
+			const marvelBtn = document.getElementById("mostrarMarvel");
+			const startMarvelBtn = document.getElementById("startMarvel");
+			[marvelBtn, startMarvelBtn].forEach((btn) => {
+				btn?.addEventListener("click", () => {
+					dataManager.fetchData().then((allHeroes: any[]) => {
+						const marvelHeroes = allHeroes.filter((h: any) =>
+							h.biography?.publisher
+								?.toLowerCase()
+								.includes("marvel"),
+						);
+						showHeroes(marvelHeroes, "marvel");
+					});
+				});
+			});
+
+			// DC
+			const dcBtn = document.getElementById("mostrarDc");
+			const startDcBtn = document.getElementById("startDc");
+			[dcBtn, startDcBtn].forEach((btn) => {
+				btn?.addEventListener("click", () => {
+					dataManager.fetchData().then((allHeroes: any[]) => {
+						const dcHeroes = allHeroes.filter((h: any) =>
+							h.biography?.publisher
+								?.toLowerCase()
+								.includes("dc"),
+						);
+						showHeroes(dcHeroes, "dc");
+					});
+				});
+			});
+
+			// Battle (igual que antes, solo muestra heroes cuando inicia batalla)
+			const battleBtn = document.getElementById("contra");
+			if (battleBtn) {
+				battleBtn.addEventListener("click", () => {
+					dataManager.fetchData().then((allHeroes: any[]) => {
+						const dcHeroes = allHeroes.filter((h: any) =>
+							h.biography?.publisher
+								?.toLowerCase()
+								.includes("dc"),
+						);
+						const marvelHeroes = allHeroes.filter((h: any) =>
+							h.biography?.publisher
+								?.toLowerCase()
+								.includes("marvel"),
+						);
+						if (welcomeHero) welcomeHero.classList.add("hidden");
+						if (heroContainer)
+							heroContainer.classList.remove("hidden");
+						battleSystem.initializeBattle(dcHeroes, marvelHeroes);
+					});
+				});
+			}
+		}
+	</script>

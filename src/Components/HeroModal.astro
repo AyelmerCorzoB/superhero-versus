@@ -1,0 +1,24 @@
+---
+// src/components/HeroModal.astro
+---
+
+<div
+  id="heroModal"
+  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 p-4"
+>
+  <!-- MODAL CONTENT -->
+  <div
+    class="relative w-full max-w-[80vw] lg:max-w-3xl overflow-y-auto rounded-xl bg-neutral-900 shadow-2xl"
+  >
+    <!-- CLOSE -->
+    <button
+      class="close-btn absolute right-4 top-3 text-2xl text-neutral-400 hover:text-red-500"
+      aria-label="Close modal"
+    >
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- CONTENT INJECTED BY JS -->
+    <div class="modal-hero-content"></div>
+  </div>
+</div>

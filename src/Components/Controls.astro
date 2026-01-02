@@ -1,0 +1,94 @@
+<section class="flex items-center gap-4">
+    <!-- SEARCH -->
+    <div class="relative flex items-center">
+        <!-- BUTTON -->
+        <button
+            id="searchToggle"
+            type="button"
+            class="z-10 flex h-10 w-10 items-center justify-center rounded-full bg-neutral-800 text-neutral-300 transition hover:bg-neutral-700 hover:text-white"
+            aria-label="Search"
+        >
+            <i class="fas fa-search pointer-events-none"></i>
+        </button>
+
+        <!-- INPUT -->
+        <input
+            type="text"
+            id="searchHero"
+            placeholder="Search heroes..."
+            autocomplete="off"
+            class="pointer-events-none absolute right-0 top-1/2 w-0 -translate-y-1/2 rounded-full bg-neutral-800 px-4 py-2 text-sm text-neutral-200 opacity-0 shadow-lg outline-none transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        />
+    </div>
+
+    <!-- MARVEL -->
+    <button
+        id="mostrarMarvel"
+        class="hidden sm:flex items-center gap-2 rounded-lg bg-red-600 px-4 py-2 text-sm font-semibold text-white shadow transition hover:bg-red-700"
+    >
+        <i class="fas fa-mask"></i>
+        Marvel
+    </button>
+
+    <!-- BATTLE -->
+    <button
+        id="contra"
+        class="flex items-center gap-2 rounded-lg bg-gradient-to-r from-red-600 to-blue-600 px-4 py-2 text-sm font-semibold text-white shadow transition hover:scale-105"
+    >
+        <i class="fas fa-bolt"></i>
+        Battle
+    </button>
+
+    <!-- DC -->
+    <button
+        id="mostrarDc"
+        class="hidden sm:flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow transition hover:bg-blue-700"
+    >
+        <i class="fas fa-shield-alt"></i>
+        DC
+    </button>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("searchToggle");
+        const input = document.getElementById("searchHero") as HTMLInputElement;
+
+        if (!toggle || !input) return;
+
+        let open = false;
+
+        toggle.addEventListener("click", () => {
+            open = !open;
+
+            if (open) {
+                input.classList.remove(
+                    "w-0",
+                    "opacity-0",
+                    "pointer-events-none",
+                );
+                input.classList.add(
+                    "w-64",
+                    "opacity-100",
+                    "pointer-events-auto",
+                );
+                input.focus();
+            } else {
+                input.classList.add("w-0", "opacity-0", "pointer-events-none");
+                input.classList.remove(
+                    "w-64",
+                    "opacity-100",
+                    "pointer-events-auto",
+                );
+                input.value = "";
+            }
+        });
+
+        // Cerrar con ESC
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && open) {
+                toggle.click();
+            }
+        });
+    });
+</script>
